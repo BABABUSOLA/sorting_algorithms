@@ -1,6 +1,6 @@
 #include"sort.h"
 /**
-  * insetion_sort_list - sort a list of numbers
+  * insertion_sort_list - sort a list of numbers
   * @list: list of integers
   * Return: Noti=hing
   */
