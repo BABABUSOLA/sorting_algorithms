@@ -27,4 +27,5 @@ void merge_sort(int *array, size_t size);
 void mergeSort(int *array, size_t size);
 void merge(int *leftArray, int *rightArray, int *array,
 		   size_t lSize, size_t size);
+
 #endif
