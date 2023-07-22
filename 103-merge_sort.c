@@ -25,7 +25,14 @@ void mergeSort(int *array, size_t size)
 	if (size <= 1)
 		return;
 	leftArray = malloc(middle * sizeof(int));
+	if (!leftArray)
+		return;
 	rightArray = malloc((size - middle) * sizeof(int));
+	if (!rightArray)
+	{
+		free(leftArray);
+		return;
+	}
 	for (; i < size; i++)
 	{
 		if (i < middle)
