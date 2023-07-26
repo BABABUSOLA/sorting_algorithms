@@ -26,17 +26,13 @@ void shell_sort(int *array, size_t size)
 			j = i;
 			while (j >= gap && array[j - gap] > array[j])
 			{
+				int *a = array + j;
+				int *b = array + (j - gap);
 
-				{
-					int *a = array + j;
-					int *b = array + (j - gap);
+				temp = *a;
+				*a = *b;
+				*b = temp;
 
-					temp = *a;
-					*a = *b;
-					*b = temp;
-
-					print_array(array, size);
-				}
 				j -= gap;
 			}
 		}
