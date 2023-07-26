@@ -28,4 +28,6 @@ void mergeSort(int *array, size_t size);
 void merge(int *leftArray, int *rightArray, int *array,
 		   size_t lSize, size_t size);
 void selection_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size);
+
 #endif
